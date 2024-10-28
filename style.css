@@ -6,6 +6,7 @@
 
 body {
   background-color: #e4a594;
+  font-family: "Courier New", Courier, monospace;
 }
 
 .nose-container {
@@ -72,6 +73,22 @@ body {
 
 .nothing {
   height: 100vh;
+}
+
+.special-thanks {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.lips-dont-lie {
+  font-size: 10rem;
+}
+
+h2 {
+  font-size: 2rem;
 }
 
 .digging {
