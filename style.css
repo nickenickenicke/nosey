@@ -3,3 +3,41 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  background-color: red;
+}
+
+.nose-container {
+  width: 100vw;
+  height: 10000vh;
+  position: relative;
+}
+
+.nose-background {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  background: url("images/nosey.png") no-repeat center center/cover;
+}
+
+.nose-foreground {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: url("images/nosey_overlay.png") no-repeat center center/cover;
+}
+
+.pointer {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100vh;
+  background: url("images/cursor_tiny.png") no-repeat center center/cover;
+}
