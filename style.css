@@ -16,10 +16,10 @@ body {
 }
 
 .nose-background {
-  margin-top: -100%;
+  transform: translateY(-100vh);
   position: sticky;
   z-index: -1;
-  top: 0;
+  top: 100vh;
   left: 0;
   width: 100%;
   min-height: 100vh;
@@ -36,6 +36,11 @@ body {
   background: url("images/nosey_overlay.png") no-repeat center center/cover;
 }
 
+.pointers {
+  position: relative;
+  transform: translateY(-200vh);
+}
+
 .pointer {
   position: relative;
   z-index: 1;
@@ -45,7 +50,7 @@ body {
 }
 
 .pointer:nth-child(1) {
-  margin-top: 50vh;
+  margin-top: 10vh;
 }
 
 .faster {
