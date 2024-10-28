@@ -16,10 +16,10 @@ body {
 }
 
 .nose-background {
-  transform: translateY(-100vh);
+  margin-top: -100vh;
   position: sticky;
   z-index: -1;
-  top: 100vh;
+  top: 0;
   left: 0;
   width: 100%;
   min-height: 100vh;
@@ -27,6 +27,7 @@ body {
 }
 
 .nose-foreground {
+  margin-top: -200vh;
   position: sticky;
   z-index: 2;
   top: 0;
@@ -38,7 +39,6 @@ body {
 
 .pointers {
   position: relative;
-  transform: translateY(-200vh);
 }
 
 .pointer {
@@ -72,4 +72,20 @@ body {
 
 .nothing {
   height: 100vh;
+}
+
+.digging {
+  animation: dig 0.3s infinite alternate;
+}
+
+@keyframes dig {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(8px);
+  }
 }
