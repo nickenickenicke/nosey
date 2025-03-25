@@ -50,6 +50,10 @@ body {
   background: url("images/cursor_tiny.png") no-repeat center center/cover;
 }
 
+.text {
+  background: url("images/cursor_text.png") no-repeat center center/cover;
+}
+
 .pointer:nth-child(1) {
   margin-top: 10vh;
 }
